@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="../assets/css/estilos.css">
+    <link rel="stylesheet" href="../assets/css/formUsuarios.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+</head>
+<header>
+    <header>
+        <nav>
+            <a href="#">
+                <img class="logoHeader"
+                    src="https://www.novomatic.com/sites/default/files/2017-05/Logo_N-Shortbrand.png" alt="logo">
+            </a>
+
+            <ul>
+                <li><a href="#">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+</header>
+<body>
+    <main class="container-fluid">
+        <div class="row">
+            <aside class="col-12 col-md-2 px-0  ">
+                <div class="d-flex justify-content-center align-items-center gap-3 my-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    </svg>
+
+                    <p class="mb-0">Nombre</p>
+                </div>
+                <ul class=" d-flex flex-column justify-content-center px-0 my-0">
+                    <a class="px-5 py-2 border-bottom border-dark" href="#">Roles</a>
+                    <a class="px-5 py-2 border-bottom border-dark" href="#">Productos</a>
+                    <a class="px-5 py-2 border-bottom border-dark" href="#">Clientes</a>
+                    <a class="px-5 py-2 border-bottom border-dark" href="#">Ventas</a>
+                    <a class="px-5 py-2 border-bottom border-dark" href="#">Cartera</a>
+                    <a class="px-5 py-2 border-bottom border-dark" href="#">Abonos</a>
+                </ul>
+            </aside>
+
+            <section class="col-12 col-md-10 my-0 d-flex justify-content-start flex-column align-items-center">
+                <h1 class="text-center py-5 my-0">CREAR USUARIO</h1>
+
+                <form class="d-flex flex-column justify-content-center w-75 gap-lg-4 mb-5 mx-5">
+                    <div class="d-flex justify-content-center gap-3">
+                        <div class="div1 w-100">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label fw-bold">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" placeholder="Nombre">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="apellido" class="form-label fw-bold">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" aria-describedby="emailHelp" placeholder="Apellido">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="identificacion" class="form-label fw-bold">Identificación</label>
+                                <input type="text" class="form-control" id="identificacion" aria-describedby="emailHelp" placeholder="Identificación">
+                            </div>
+                        </div>
+
+                        <div class="div2 w-100">
+                            <div class="mb-3">
+                                <label for="correo" class="form-label fw-bold">Correo</label>
+                                <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="Correo">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label fw-bold">Teléfono</label>
+                                <input type="text" class="form-control" id="telefono" aria-describedby="emailHelp" placeholder="Teléfono">
+                            </div>
+                            <div class="mb-3">
+                                <label for="direccion" class="form-label fw-bold">Dirección</label>
+                                <input type="text" class="form-control" id="direccion" aria-describedby="emailHelp" placeholder="Dirección">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center  gap-4  w-100">
+                        <div class="div_botones w-100">
+                            <button type="submit" class="btn btn w-100 btn-styles" id="enviar" style="background-color: #023059 ; color: white;">Enviar</button>
+                        </div>
+
+                        <div class="div_botones d-flex justify-content-center w-100">
+                            <button type="submit" class="btn btn w-100 btn-styles" id="limpiar" style="background-color: #023059; color: white;">Limpiar</button>
+                        </div>
+                    </div>
+                </form>
+                <p id="respuesta">**</p>
+            </section>
+        </div>
+
+    </main>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="../assets/js/funciones.js"></script>
+</body>
+
+</html>
